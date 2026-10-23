@@ -1,11 +1,12 @@
 
 name: 'Vowel Frequency Analyzer'
-description: 'Custom action to analyze vowels frequency.'
+description: 'Custom Docker action to calculate vowel frequencies'
 
 inputs:
   file:
-    description: 'The path to the text file to analyze (e.g., data.txt).'
+    description: 'Path to the text file'
     required: true
+    default: 'data.txt'
 
 runs:
   using: 'docker'
